@@ -10,18 +10,19 @@
 <ion-content padding>
 
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+    <button ion-item *ngFor="let event of events" (click)="itemTapped($event, event)">
       <ion-avatar item-left>
-        <img src="assets/img/headshot.png" alt="{{item.recipientName}}">
+        <img src="assets/img/headshot.png" alt="{{event.recipientName}}">
       </ion-avatar>
-      <p item-right>{{item.dueDate}}</p>
-      <h2>{{item.recipientName}}</h2>
-      <h3>{{item.eventName}}</h3>
+      <p item-right>{{event.date}}</p>
+      <h2>person</h2>
+      <!-- {{gift.contacts.0}} -->
+      <h3>{{event.name}}</h3>
     </button>
   </ion-list>
 
   <ion-fab right bottom>
-    <button ion-fab color="blue" (click)="goToContactPicker('new-event')">
+    <button ion-fab primary (click)="goToContactPicker('new-event')">
       <ion-icon name="add"></ion-icon>
     </button>
   </ion-fab>

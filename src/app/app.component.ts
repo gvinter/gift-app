@@ -1,11 +1,18 @@
 import { Component, ViewChild } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { GiftList, Contacts } from '../pages/pages';
+import { GiftList, ContactsList } from '../pages/pages';
+import { GiftAppApi } from '../shared/shared';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+    GiftAppApi,
+    HttpModule
+  ]
 })
 export class GiftApp {
   @ViewChild(Nav) nav: Nav;
@@ -20,7 +27,7 @@ export class GiftApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Gift List', component: GiftList },
-      { title: 'People', component: Contacts }
+      { title: 'People', component: ContactsList }
     ];
 
   }

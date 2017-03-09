@@ -1,0 +1,87 @@
+{
+  "gifts": [
+    {
+      "name": "Foam roller",
+      "budget": "$50",
+      "cost": "",
+      "status": "1"
+    },
+    {
+      "name": "pokemon cards",
+      "budget": "$15",
+      "cost": "$15",
+      "status": "2"
+    },
+    {
+      "name": "Hot wheels premium pack",
+      "budget": "$40",
+      "cost": "$35",
+      "status": "3"
+    },
+    {
+      "name": "kettle bells - 50lbs",
+      "budget": "$45",
+      "cost": "",
+      "status": "1"
+    }
+  ],
+  "events": [
+    {
+      "name": "Christmas 2017",
+      "date": "Dec 25",
+      "budget": "$450",
+      "contacts": ["25","26","27"],
+      "type": "group"
+    },
+    {
+      "name": "Birthday",
+      "budget": "$100",
+      "contacts": ["28"],
+      "type": "single"
+    },
+    {
+      "name": "Birthday",
+      "budget": "$250",
+      "contacts": ["25"],
+      "type": "single"
+    },
+    {
+      "name": "Anniversary",
+      "date": "Dec 25",
+      "budget": "$450",
+      "contacts": ["25"],
+      "type": "single"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "25",
+      "name": "Caitlin G.",
+      "photo": "",
+      "birthday": "Apr 22"
+    },
+    {
+      "id": "26",
+      "name": "Ben H.",
+      "photo": "",
+      "birthday": "Mar 19"
+    },
+    {
+      "id": "27",
+      "name": "Allison K.",
+      "photo": "",
+      "birthday": "Oct 12"
+    },
+    {
+      "id": "28",
+      "name": "Jackson F.",
+      "photo": "",
+      "birthday": "Dec 5"
+    },
+    {
+      "name": "Hank A.",
+      "photo": "",
+      "birthday": "Feb 26"
+    }
+  ]
+}
